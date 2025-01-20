@@ -1,2 +1,2 @@
 # TECHNEX-HACKATHON-25
-a project a hackathon in vincent palloti college
+a project for hackathon in vincent palloti college
