@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Courses Dashboard</title>
+    <meta name="description" content="Interactive coding courses dashboard" />
+    <meta name="author" content="Lovable" />
+    <meta property="og:image" content="/og-image.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="min-h-screen bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 shadow-lg">
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 size-4">
+          <span class="text-xl gradient-text font-bold">CodesLab</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#html" class="hover:text-indigo-400 transition-colors"
+            >HTML</a
+          >
+          <a href="#css" class="hover:text-indigo-400 transition-colors">CSS</a>
+          <a href="#javascript" class="hover:text-indigo-400 transition-colors"
+            >JavaScript</a
+          >
+          <a href="#cpp" class="hover:text-indigo-400 transition-colors">C++</a>
+          <a href="#python" class="hover:text-indigo-400 transition-colors"
+            >Python</a
+          >
+          <a href="#sql" class="hover:text-indigo-400 transition-colors">SQL</a>
+        </div>
+
+        <!-- Profile -->
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-8 h-8 rounded-full border-2 border-indigo-500"
+            src="https://i.pravatar.cc/100?img=1"
+            alt="Profile"
+          />
+          <span class="hidden md:inline">John Doe</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Course Grid -->
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- HTML Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">Learn HTML</h2>
+
+            <p class="text-gray-400">
+              Master the fundamentals of HTML and web structure with our
+              interactive course.
+            </p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.5"></div>
+              <span class="text-gray-400">(1,245 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=1"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=2"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=3"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">89,234</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">CSS Mastery</h2>
+
+            <p class="text-gray-400">
+              Learn to style your websites with CSS and create beautiful
+              designs.
+            </p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.7"></div>
+              <span class="text-gray-400">(2,189 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=4"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=5"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=6"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">76,543</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">JavaScript Essentials</h2>
+
+            <p class="text-gray-400">
+              Build interactive websites with JavaScript programming.
+            </p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.8"></div>
+              <span class="text-gray-400">(3,567 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=7"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=8"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=9"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">92,123</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- C++ Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">C++ Programming</h2>
+
+            <p class="text-gray-400">
+              Learn object-oriented programming with C++.
+            </p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.6"></div>
+              <span class="text-gray-400">(2,890 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=10"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=11"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=12"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">67,890</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">Python Basics</h2>
+
+            <p class="text-gray-400">
+              Start your programming journey with Python.
+            </p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.9"></div>
+              <span class="text-gray-400">(4,123 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=13"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=14"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=15"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">98,765</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL Course Card -->
+        <div
+          class="bg-gray-800 rounded-2xl shadow-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >Free Course</span
+              >
+            </div>
+
+            <h2 class="text-2xl font-bold">SQL Database</h2>
+
+            <p class="text-gray-400">Master database management with SQL.</p>
+
+            <div class="flex items-center gap-2">
+              <div class="stars-container flex gap-1" data-rating="4.7"></div>
+              <span class="text-gray-400">(2,756 ratings)</span>
+            </div>
+
+            <button
+              class="w-full bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-indigo-700"
+            >
+              Start Learning
+            </button>
+
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=16"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=17"
+                  alt="User"
+                />
+                <img
+                  class="w-8 h-8 rounded-full border-2 border-gray-800"
+                  src="https://i.pravatar.cc/100?img=18"
+                  alt="User"
+                />
+              </div>
+              <span class="text-gray-400"
+                ><span class="font-semibold">71,432</span> learners</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Generate star ratings for all containers
+      document.querySelectorAll(".stars-container").forEach((container) => {
+        const rating = parseFloat(container.dataset.rating);
+        const fullStars = Math.floor(rating);
+        const hasHalfStar = rating % 1 >= 0.5;
+
+        for (let i = 0; i < 5; i++) {
+          const star = document.createElement("i");
+          if (i < fullStars) {
+            star.className = "fas fa-star text-yellow-400";
+          } else if (i === fullStars && hasHalfStar) {
+            star.className = "fas fa-star-half-alt text-yellow-400";
+          } else {
+            star.className = "far fa-star text-yellow-400";
+          }
+          container.appendChild(star);
+        }
+      });
+    </script>
+  </body>
+</html>

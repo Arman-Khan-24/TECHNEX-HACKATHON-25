@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tutorial-box {
+  @apply p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 cursor-pointer;
+}
+
+.sidebar-item {
+  @apply flex items-center gap-2 px-4 py-2 hover:bg-gray-100 text-gray-700 rounded-lg transition-colors duration-200;
+}
+
+.tutorial-title {
+  @apply text-xl font-bold mb-2 text-gray-800;
+}
+
+body {
+  @apply antialiased;
+}
