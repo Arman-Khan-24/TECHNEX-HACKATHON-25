@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Tutorial</title>
+    <meta name="description" content="Learn Python programming with our comprehensive tutorial" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+  </head>
+  <body class="bg-background">
+    <button id="sidebarToggle" class="fixed top-4 left-4 z-50 p-2 bg-primary text-white rounded-lg md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="fixed w-64 h-screen bg-sidebar-bg border-r border-accent/20 overflow-y-auto transition-transform duration-300 -translate-x-full md:translate-x-0">
+        <div class="sticky top-0 p-4 bg-sidebar-bg border-b border-accent/20">
+          <h1 class="text-2xl font-bold text-primary">Python Tutorial</h1>
+        </div>
+        <nav class="p-4 space-y-2">
+          <a href="#introduction" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Introduction</a>
+          <a href="#syntax" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Syntax</a>
+          <a href="#output" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Output</a>
+          <a href="#comments" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Comments</a>
+          <a href="#variables" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Variables</a>
+          <a href="#data-types" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Data Types</a>
+          <a href="#operators" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Operators</a>
+          <a href="#strings" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Strings</a>
+          <a href="#functions" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Functions</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 ml-0 md:ml-64 p-8">
+        <div class="max-w-3xl mx-auto prose">
+          <section id="introduction" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Introduction to Python</h2>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p>Created by Guido van Rossum and released in 1991, Python emphasizes code readability with its notable use of significant whitespace.</p>
+            <p>It's widely used in web development, data science, artificial intelligence, and automation.</p>
+          </section>
+
+          <section id="syntax" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Syntax</h2>
+            <p>Let's look at a simple Python example:</p>
+            <pre><code class="language-python"># Your first Python code
+def greet():
+    print("Hello, World!")
+
+greet()</code></pre>
+          </section>
+
+          <section id="output" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Output</h2>
+            <p>Python can display output using the print function:</p>
+            <pre><code class="language-python"># Basic print statement
+print("Hello World!")
+
+# Print with multiple arguments
+print("Hello", "World", "!", sep=" ")
+
+# Formatted string literals (f-strings)
+name = "World"
+print(f"Hello, {name}!")
+
+# Using .format() method
+print("Hello, {}!".format("World"))</code></pre>
+          </section>
+
+          <section id="comments" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Comments</h2>
+            <p>Comments can be used to explain Python code and make it more readable.</p>
+            <pre><code class="language-python"># This is a single-line comment
+
+'''
+This is a
+multi-line comment
+'''</code></pre>
+          </section>
+
+          <section id="variables" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Variables</h2>
+            <p>Variables are containers for storing data values. In Python, we don't need to declare variable types explicitly:</p>
+            <pre><code class="language-python">x = 5        # Integer
+y = "Hello"   # String
+z = 3.14      # Float
+is_valid = True  # Boolean</code></pre>
+          </section>
+
+          <section id="data-types" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Data Types</h2>
+            <p>Python has several built-in data types:</p>
+            <pre><code class="language-python"># Number
+number = 42
+
+# String
+text = "Hello Python"
+
+# Boolean
+is_active = True
+
+# List
+fruits = ["Apple", "Banana", "Orange"]
+
+# Dictionary
+person = {
+    "name": "John",
+    "age": 30
+}
+
+# Tuple
+coordinates = (10, 20)
+
+# Set
+unique_numbers = {1, 2, 3, 4, 5}</code></pre>
+          </section>
+
+          <section id="operators" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Operators</h2>
+            <p>Python includes various operators for performing operations:</p>
+            <pre><code class="language-python"># Arithmetic Operators
+sum = 5 + 2    # Addition
+sub = 5 - 2    # Subtraction
+mul = 5 * 2    # Multiplication
+div = 5 / 2    # Division
+floor_div = 5 // 2  # Floor Division
+mod = 5 % 2    # Modulus
+exp = 5 ** 2   # Exponentiation
+
+# Comparison Operators
+equal = 5 == 5      # True
+not_equal = 5 != 4  # True</code></pre>
+          </section>
+
+          <section id="strings" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Strings</h2>
+            <p>Strings are used for storing and manipulating text:</p>
+            <pre><code class="language-python">text = "Hello Python"
+length = len(text)       # Get length
+upper = text.upper()     # Convert to upper case
+lower = text.lower()     # Convert to lower case
+split = text.split()     # Split into list</code></pre>
+          </section>
+
+          <section id="functions" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Python Functions</h2>
+            <p>Functions are blocks of code that only run when called:</p>
+            <pre><code class="language-python"># Basic function
+def greet(name):
+    return f"Hello {name}"
+
+# Function with default parameter
+def multiply(a, b=1):
+    return a * b
+
+# Lambda function
+square = lambda x: x ** 2</code></pre>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script>
+        // ... keep existing code (JavaScript for sidebar toggle and section highlighting)
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+  
+        sidebarToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('-translate-x-full');
+        });
+  
+        // Close sidebar when clicking a link (mobile)
+        document.querySelectorAll('#sidebar a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+              sidebar.classList.add('-translate-x-full');
+            }
+          });
+        });
+  
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+  
+        // Highlight current section in sidebar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('#sidebar a');
+  
+        window.addEventListener('scroll', () => {
+          let current = '';
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 100) {
+              current = '#' + section.getAttribute('id');
+            }
+          });
+  
+          navLinks.forEach(link => {
+            link.classList.remove('bg-gray-200');
+            if (link.getAttribute('href') === current) {
+              link.classList.add('bg-gray-200');
+            }
+          });
+        });
+      </script>
+  </body>
+</html>

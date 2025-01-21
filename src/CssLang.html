@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tutorial</title>
+    <meta name="description" content="Learn CSS with our comprehensive tutorial" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+  </head>
+  <body class="bg-background">
+    <button id="sidebarToggle" class="fixed top-4 left-4 z-50 p-2 bg-primary text-white rounded-lg md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="fixed w-64 h-screen bg-sidebar-bg border-r border-accent/20 overflow-y-auto transition-transform duration-300 -translate-x-full md:translate-x-0">
+        <div class="sticky top-0 p-4 bg-sidebar-bg border-b border-accent/20">
+          <h1 class="text-2xl font-bold text-primary">CSS Tutorial</h1>
+        </div>
+        <nav class="p-4 space-y-2">
+          <a href="#introduction" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Introduction</a>
+          <a href="#syntax" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Syntax</a>
+          <a href="#selectors" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Selectors</a>
+          <a href="#colors" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Colors</a>
+          <a href="#box-model" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Box Model</a>
+          <a href="#display" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Display</a>
+          <a href="#positioning" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Positioning</a>
+          <a href="#flexbox" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Flexbox</a>
+          <a href="#grid" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Grid</a>
+          <li>
+            <a href="#" data-quiz="css" class="quiz-link">CSS Quiz</a>
+        </li>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 ml-0 md:ml-64 p-8">
+        <div class="max-w-3xl mx-auto prose">
+          <section id="introduction" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
+            <p>It describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+          </section>
+
+          <section id="syntax" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Syntax</h2>
+            <p>CSS consists of selectors and declarations:</p>
+            <pre><code class="language-css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+          </section>
+
+          <section id="selectors" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Selectors</h2>
+            <p>CSS selectors are used to target HTML elements:</p>
+            <pre><code class="language-css">/* Element selector */
+p {
+  color: blue;
+}
+
+/* Class selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID selector */
+#header {
+  font-size: 24px;
+}</code></pre>
+          </section>
+
+          <section id="colors" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Colors</h2>
+            <p>Colors can be specified in different ways:</p>
+            <pre><code class="language-css">/* Color names */
+color: red;
+
+/* RGB values */
+color: rgb(255, 0, 0);
+
+/* HEX values */
+color: #ff0000;
+
+/* HSL values */
+color: hsl(0, 100%, 50%);</code></pre>
+          </section>
+
+          <section id="box-model" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Box Model</h2>
+            <p>The CSS box model consists of margins, borders, padding, and content:</p>
+            <pre><code class="language-css">.box {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+}</code></pre>
+          </section>
+
+          <section id="display" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Display Property</h2>
+            <p>The display property specifies how an element should be displayed:</p>
+            <pre><code class="language-css">.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}</code></pre>
+          </section>
+
+          <section id="positioning" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Positioning</h2>
+            <p>CSS positioning helps you control where elements appear on the page:</p>
+            <pre><code class="language-css">.relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}</code></pre>
+          </section>
+
+          <section id="flexbox" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Flexbox</h2>
+            <p>Flexbox is a one-dimensional layout method for arranging items:</p>
+            <pre><code class="language-css">.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}</code></pre>
+          </section>
+
+          <section id="grid" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">CSS Grid</h2>
+            <p>CSS Grid is a two-dimensional layout system:</p>
+            <pre><code class="language-css">.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #f0f0f0;
+}</code></pre>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // ... keep existing code (sidebar toggle and navigation functionality)
+      const sidebar = document.getElementById('sidebar');
+      const sidebarToggle = document.getElementById('sidebarToggle');
+
+      sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('-translate-x-full');
+      });
+
+      // Close sidebar when clicking a link (mobile)
+      document.querySelectorAll('#sidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 768) {
+            sidebar.classList.add('-translate-x-full');
+          }
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Highlight current section in sidebar
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('#sidebar a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 100) {
+            current = '#' + section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('bg-gray-200');
+          if (link.getAttribute('href') === current) {
+            link.classList.add('bg-gray-200');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

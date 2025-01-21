@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quizzes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen">
+        <div class="container">
+            <h1>Programming Quizzes</h1>
+            
+            <div class="grid">
+                <div class="category">
+                    <h2>Frontend</h2>
+                    <ul>
+                        <li>
+                            <a href="#" data-quiz="html" class="quiz-link">HTML Quiz</a>
+                        </li>
+                        <li>
+                            <a href="#" data-quiz="css" class="quiz-link">CSS Quiz</a>
+                        </li>
+                        <li>
+                            <a href="#" data-quiz="javascript" class="quiz-link">JavaScript Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h2>Backend</h2>
+                    <ul>
+                        <li>
+                            <a href="#" data-quiz="python" class="quiz-link">Python Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="quiz-container" class="quiz-container hidden">
+                <h2 id="quiz-title"></h2>
+                <div id="question-container">
+                    <p id="question-text"></p>
+                    <div id="options-container"></div>
+                </div>
+                <div id="explanation" class="explanation hidden"></div>
+                <button id="next-btn" class="btn">Next Question</button>
+                <button id="back-btn" class="btn">Back to Categories</button>
+            </div>
+        </div>
+    </div>
+    <script src="quizData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

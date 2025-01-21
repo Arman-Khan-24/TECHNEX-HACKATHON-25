@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutorial</title>
+    <meta name="description" content="Learn JavaScript programming with our comprehensive tutorial" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+  </head>
+  <body class="bg-background">
+    <button id="sidebarToggle" class="fixed top-4 left-4 z-50 p-2 bg-primary text-white rounded-lg md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="fixed w-64 h-screen bg-sidebar-bg border-r border-accent/20 overflow-y-auto transition-transform duration-300 -translate-x-full md:translate-x-0">
+        <div class="sticky top-0 p-4 bg-sidebar-bg border-b border-accent/20">
+          <h1 class="text-2xl font-bold text-primary">JavaScript Tutorial</h1>
+        </div>
+        <nav class="p-4 space-y-2">
+          <a href="#introduction" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Introduction</a>
+          <a href="#syntax" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Syntax</a>
+          <a href="#output" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Output</a>
+          <a href="#comments" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Comments</a>
+          <a href="#variables" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Variables</a>
+          <a href="#data-types" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Data Types</a>
+          <a href="#operators" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Operators</a>
+          <a href="#strings" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Strings</a>
+          <a href="#functions" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">Functions</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 ml-0 md:ml-64 p-8">
+        <div class="max-w-3xl mx-auto prose">
+          <section id="introduction" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">Introduction to JavaScript</h2>
+            <p>JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more.</p>
+            <p>JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications.</p>
+            <p>It's now one of the world's most popular programming languages and is a core technology of the World Wide Web.</p>
+          </section>
+
+          <section id="syntax" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Syntax</h2>
+            <p>Let's look at a simple JavaScript example:</p>
+            <pre><code class="language-javascript">// Your first JavaScript code
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet();</code></pre>
+          </section>
+
+          <section id="output" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Output</h2>
+            <p>JavaScript can display output in different ways:</p>
+            <pre><code class="language-javascript">// Writing to console
+console.log("Hello World!");
+
+// Writing to HTML
+document.write("Hello World!");
+
+// Writing to an HTML element
+document.getElementById("demo").innerHTML = "Hello World!";
+
+// Using window alert
+alert("Hello World!");</code></pre>
+          </section>
+
+          <section id="comments" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Comments</h2>
+            <p>Comments can be used to explain JavaScript code and make it more readable.</p>
+            <pre><code class="language-javascript">// This is a single-line comment
+
+/* This is a
+multi-line comment */</code></pre>
+          </section>
+
+          <section id="variables" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Variables</h2>
+            <p>Variables are containers for storing data values. In JavaScript, we have three ways to declare variables:</p>
+            <pre><code class="language-javascript">var x = 5;       // Old way (avoid using var)
+let y = 6;       // Block-scoped variable
+const z = 7;     // Constant (cannot be reassigned)</code></pre>
+          </section>
+
+          <section id="data-types" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Data Types</h2>
+            <p>JavaScript has several data types:</p>
+            <pre><code class="language-javascript">// Number
+let length = 16;
+
+// String
+let color = "Yellow";
+
+// Boolean
+let isActive = true;
+
+// Object
+let person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+// Array
+let fruits = ["Apple", "Banana", "Orange"];
+
+// Undefined
+let undefined_var;
+
+// Null
+let empty = null;</code></pre>
+          </section>
+
+          <section id="operators" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Operators</h2>
+            <p>JavaScript includes various operators for performing operations:</p>
+            <pre><code class="language-javascript">// Arithmetic Operators
+let sum = 5 + 2;    // Addition
+let sub = 5 - 2;    // Subtraction
+let mul = 5 * 2;    // Multiplication
+let div = 5 / 2;    // Division
+let mod = 5 % 2;    // Modulus
+
+// Comparison Operators
+let equal = 5 == "5";     // true
+let strictEqual = 5 === "5";  // false</code></pre>
+          </section>
+
+          <section id="strings" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Strings</h2>
+            <p>Strings are used for storing and manipulating text:</p>
+            <pre><code class="language-javascript">let text = "Hello World";
+let length = text.length;  // Get length
+let upper = text.toUpperCase();  // Convert to upper case
+let lower = text.toLowerCase();  // Convert to lower case</code></pre>
+          </section>
+
+          <section id="functions" class="content-section mb-16">
+            <h2 class="text-3xl font-bold mb-6">JavaScript Functions</h2>
+            <p>Functions are blocks of code designed to perform a particular task:</p>
+            <pre><code class="language-javascript">// Function Declaration
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+// Arrow Function
+const multiply = (a, b) => a * b;
+
+// Function Expression
+const greet = function(name) {
+  return "Hello " + name;
+};</code></pre>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // ... keep existing code (sidebar toggle and section highlighting functionality)
+    </script>
+  </body>
+</html>

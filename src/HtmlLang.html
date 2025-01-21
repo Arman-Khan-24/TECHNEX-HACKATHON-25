@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+    <meta name="description" content="Learn HTML Programming" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markup.min.js"></script>
+  </head>
+
+  <body class="bg-white">
+    <!-- Sidebar Toggle Button -->
+    <button id="sidebarToggle" class="fixed top-4 left-4 z-50 p-2 bg-blue-600 text-white rounded-md md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full md:translate-x-0 bg-gray-100 border-r border-gray-200">
+      <div class="h-full px-3 py-4 overflow-y-auto">
+        <h1 class="mb-4 text-2xl font-bold text-blue-600">HTML Tutorial</h1>
+        <ul class="space-y-2">
+            <li>
+                <a href="#intro" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Introduction
+                </a>
+            </li>
+            <li>
+                <a href="#basics" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Basics
+                </a>
+            </li>
+            <li>
+                <a href="#elements" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Elements
+                </a>
+            </li>
+            <li>
+                <a href="#attributes" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Attributes
+                </a>
+            </li>
+            <li>
+                <a href="#headings" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Headings
+                </a>
+            </li>
+            <li>
+                <a href="#paragraphs" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Paragraphs
+                </a>
+            </li>
+            <li>
+                <a href="#styles" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Styles
+                </a>
+            </li>
+            <li>
+                <a href="#formatting" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200">
+                    HTML Formatting
+                </a>
+            </li>
+            <li>
+                <a href="#" data-quiz="html" class="quiz-link">HTML Quiz</a>
+            </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="p-4 md:ml-64 min-h-screen">
+      <div class="max-w-3xl mx-auto space-y-12 py-8">
+        <section id="intro" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Introduction</h2>
+          <p class="mb-4 text-gray-700">HTML is the standard markup language for creating Web pages.</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+          </ul>
+        </section>
+
+        <section id="basics" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Basics</h2>
+          <p class="mb-4 text-gray-700">A simple HTML document:</p>
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;My First Heading&lt;/h1&gt;
+  &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </section>
+
+        <section id="elements" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Elements</h2>
+          <p class="mb-4 text-gray-700">An HTML element is defined by a start tag, some content, and an end tag:</p>
+          <pre><code class="language-html">
+&lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+          </code></pre>
+          <p class="mt-4 mb-4 text-gray-700">Examples of some HTML elements:</p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>&lt;h1&gt;My First Heading&lt;/h1&gt;</li>
+            <li>&lt;p&gt;My first paragraph.&lt;/p&gt;</li>
+            <li>&lt;br&gt; (empty element)</li>
+          </ul>
+        </section>
+
+        <section id="attributes" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Attributes</h2>
+          <p class="mb-4 text-gray-700">HTML attributes provide additional information about HTML elements:</p>
+          <pre><code class="language-html">
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+&lt;img src="image.jpg" alt="Description"&gt;
+          </code></pre>
+        </section>
+
+        <section id="headings" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Headings</h2>
+          <p class="mb-4 text-gray-700">HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags:</p>
+          <pre><code class="language-html">
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+          </code></pre>
+        </section>
+
+        <section id="paragraphs" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Paragraphs</h2>
+          <p class="mb-4 text-gray-700">HTML paragraphs are defined with the &lt;p&gt; tag:</p>
+          <pre><code class="language-html">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+          </code></pre>
+        </section>
+
+        <section id="styles" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Styles</h2>
+          <p class="mb-4 text-gray-700">The HTML style attribute is used to add styles to an element:</p>
+          <pre><code class="language-html">
+&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+&lt;h1 style="color:blue;text-align:center"&gt;Centered Blue Heading&lt;/h1&gt;
+          </code></pre>
+        </section>
+
+        <section id="formatting" class="scroll-mt-8">
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">HTML Formatting</h2>
+          <p class="mb-4 text-gray-700">HTML formatting elements:</p>
+          <pre><code class="language-html">
+&lt;b&gt;Bold text&lt;/b&gt;
+&lt;strong&gt;Important text&lt;/strong&gt;
+&lt;i&gt;Italic text&lt;/i&gt;
+&lt;em&gt;Emphasized text&lt;/em&gt;
+&lt;mark&gt;Marked text&lt;/mark&gt;
+&lt;small&gt;Small text&lt;/small&gt;
+&lt;del&gt;Deleted text&lt;/del&gt;
+&lt;ins&gt;Inserted text&lt;/ins&gt;
+&lt;sub&gt;Subscript text&lt;/sub&gt;
+&lt;sup&gt;Superscript text&lt;/sup&gt;
+          </code></pre>
+        </section>
+        <div class="min-h-screen">
+            <div class="container">
+                <h1>Programming Quizzes</h1>
+                
+                <div class="grid">
+                    <div style="font-size: 20px;" class="category">
+                        <h2>QUIZ LINK: </h2>
+                        <ul>
+                            <li>
+                                <a href="#" data-quiz="html" class="quiz-link">HTML Quiz</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+    
+                <div id="quiz-container" class="quiz-container hidden">
+                    <h2 id="quiz-title"></h2>
+                    <div id="question-container">
+                        <p id="question-text"></p>
+                        <div id="options-container"></div>
+                    </div>
+                    <div id="explanation" class="explanation hidden"></div>
+                    <button id="next-btn" class="btn">Next Question</button>
+                    <button id="back-btn" class="btn">Back to Categories</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <script src="quizData.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Sidebar toggle functionality
+      const sidebar = document.getElementById('sidebar');
+      const sidebarToggle = document.getElementById('sidebarToggle');
+
+      sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('-translate-x-full');
+      });
+
+      // Close sidebar when clicking a link (mobile)
+      document.querySelectorAll('#sidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 768) {
+            sidebar.classList.add('-translate-x-full');
+          }
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Highlight current section in sidebar
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('#sidebar a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 100) {
+            current = '#' + section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('bg-gray-200');
+          if (link.getAttribute('href') === current) {
+            link.classList.add('bg-gray-200');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
