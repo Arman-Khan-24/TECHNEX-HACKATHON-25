@@ -8,7 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   background-color: #1a1e2e;
-  color: rgb(45, 31, 31);
+  color: #efe7e7;
   line-height: 1.6;
 }
 
@@ -20,6 +20,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  background-color: black;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  background-color: black;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +103,7 @@ li {
 
 .option.correct {
   background-color: rgba(34, 197, 94, 0.2);
-  border-color: #22c55e;
+  border-color: black;
 }
 
 .option.incorrect {
